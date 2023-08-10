@@ -1,5 +1,4 @@
-// matches.js
-const matches = [
+[
   {
               title: 'ROAC SV J1 - SLOTERMEER BV J3',
               description: 'Landelijke Jeugdcompetitie Fase 1 2023-2024 – Categorie D – Afd. 18',
@@ -324,4 +323,3 @@ const matches = [
       }
 ]
 
-export default matches;

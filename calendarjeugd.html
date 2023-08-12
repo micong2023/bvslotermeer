@@ -1,45 +1,16 @@
 <!DOCTYPE html>
-<html lang='nl'>
+<html lang="nl">
 <head>
-  <meta charset='utf-8' />
-  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
-  <style>
-    .home-game {
-      background-color: #cce6ff; /* Light blue for home games */
-    }
-    .away-game {
-      background-color: #ffb3b3; /* Light red for away games */
-    }
-    .fc-event {
-      text-align: center;
-      font-size: 10px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    .event-title {
-      padding: 4px;
-    }
-  </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.css" rel="stylesheet" />
+   <title>Event Calendar</title>
 </head>
 <body>
-  <div id='calendar'></div>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      events: 'events.json', // Load events from the JSON file
-      locale: 'nl', // Set the locale to Dutch
-      eventContent: function(arg) {
-        return {
-          html: `<div class="event-title">${arg.event.title}</div>`,
-        };
-      },
-    });
-    calendar.render();
-  });
-</script>
-
+   <div id="calendar"></div>
+   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/interaction/main.js"></script>
+   <script src="events.js"></script>
+   <script src="calendarjeugd.js"></script>
 </body>
 </html>
